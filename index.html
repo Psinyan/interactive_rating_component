@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/rating.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/thankyoupage.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
+  <script src="https://kit.fontawesome.com/e750f96f00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <div class="card--main">
+    <div class="circle">
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <h1>How did we do?</h1>
+
+    <p>Please let us know how we did with your support request. All feedback is appreciated
+    to help us improve our offering!</p>
+
+    <form>
+
+      <label class="rating">
+        <input type="radio" name="radio">
+        <span class="checkmark"><p class="mark">1</p></span>
+      </label>
+      <label class="rating">
+        <input type="radio" name="radio">
+        <span class="checkmark"><p class="mark">2</p></span>
+      </label>
+      <label class="rating">
+        <input type="radio" name="radio">
+        <span class="checkmark"><p class="mark">3</p></span>
+      </label>
+      <label class="rating">
+        <input type="radio" name="radio">
+        <span class="checkmark"><p class="mark">4</p></span>
+      </label>
+      <label class="rating">
+        <input type="radio" name="radio">
+        <span class="checkmark"><p class="mark">5</p></span>
+      </label>
+
+    </form>
+
+    <button id="button">SUBMIT</button>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div class="card--thank">
+    <h1 class="thank-you-text">Thank you!</h1>
+
+    <p class="thank-you-text" id="description">We appreciate you taking the time to give a rating. If you ever need more support,
+    don’t hesitate to get in touch!</p>
+
+    <img src="./images/illustration-thank-you.svg" id="image">
+    <p id="user-rating">You selected <!--  Add rating here --> out of 5</p>
+  </div>
+
+  <!-- Thank you state end -->
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
